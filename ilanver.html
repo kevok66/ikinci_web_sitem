@@ -1,0 +1,66 @@
+<html>
+  <head>
+   
+    <meta name="author" content="Kevser Çil">
+    <meta name="description" content="kevsercil.blogspot.com">
+    <meta name="keywords" content="web,html,css">
+    <meta http-equiv="content" content-type="text/html; charset=iso-8859-9">
+    <title>Kevser Çil | Web Site</title>
+<body background="arkaplan.jpg">
+  </head>
+
+    <br>
+    <center>
+      <a href="#"><img src="images/logo.png" alt="logo"></a>
+    </center>
+
+<a href="anasayfa.html"><img src="images/tus1.png"></a>
+<a href="ilanlaragozat.html"><img src="images/tus2.png"></a>
+<a href="ilanver.html"><img src="images/tus3.png"></a>
+<a href="iletisim.html"><img src="images/tus4.png"></a>
+<center>
+<img src="images/ilansayfasi.png"></img></center>
+
+
+<center><font face="arial" size="2" color="black">İLAN BAŞLIĞI*:<br />
+	<input style="width:520px;" id="title" name="title" type="text" value="" maxlength="120" onblur="validateText(this);"  lang="false" />
+	<input style="width:50px;" id="price" name="price" type="text" value="" maxlength="8"  onkeypress="return isNumberKey(event);"   />TL<br />
+	<br />
+	İLAN AÇIKLAMASI*:<br />
+
+			<textarea rows="10" cols="73" name="description" id="description" onblur="validateText(this);"  lang="false"></textarea>	<br />	
+		
+	    ŞEHİR:<br />
+	<select name="location" id="location" onChange="validateNumber(this);" lang="false">
+    <option></option><option  value='1'>Tüm Şehirler</option><optgroup label='Tüm Şehirler'><option  value='2'>Adana</option><option  value='3'>Adıyaman</option><option  value='4'>Afyon</option><option  value='5'>Ağrı</option><option  value='6'>Aksaray</option><option  value='7'>Amasya</option><option  value='8'>Ankara</option><option  value='9'>Antalya</option><option  value='10'>Ardahan</option><option  value='11'>Artvin</option><option  value='12'>Aydın</option><option  value='13'>Balıkesir</option><option  value='16'>Bayburt</option><option  value='17'>Bilecik</option><option  value='18'>Bingöl</option><option  value='19'>Bitlis</option><option  value='20'>Bolu</option><option  value='21'>Burdur</option><option  value='22'>Bursa</option><option  value='23'>Çanakkale</option><option  value='24'>Çankırı</option><option  value='25'>Çorum</option><option  value='26'>Denizli</option><option  value='27'>Diyarbakır</option><option  value='28'>Edirne</option><option  value='29'>Elazığ</option><option  value='30'>Erzincan</option><option  value='31'>Erzurum</option><option  value='32'>Eskişehir</option><option  value='33'>Gaziantep</option><option  value='34'>Giresun</option><option  value='35'>Gümüşhane</option><option  value='36'>Hakkâri</option><option  value='37'>Hatay</option><option  value='38'>Isparta</option><option  value='39'>Mersin</option><option  value='45'>İstanbul</option><option  value='46'>İzmir</option><option  value='47'>Kars</option><option  value='48'>Kastamonu</option><option  value='49'>Kayseri</option><option  value='50'>Kırklareli</option><option  value='51'>Kırşehir</option><option  value='52'>Kocaeli</option><option  value='53'>Konya</option><option  value='54'>Kütahya</option><option  value='55'>Malatya</option><option  value='56'>Manisa</option><option  value='57'>Kahramanmaraş</option><option  value='58'>Mardin</option><option  value='59'>Muğla</option><option  value='60'>Muş</option><option  value='61'>Nevşehir</option><option  value='62'>Niğde</option><option  value='63'>Ordu</option><option  value='64'>Rize</option><option  value='65'>Sakarya</option><option  value='66'>Samsun</option><option  value='67'>Siirt</option><option  value='68'>Sinop</option><option  value='69'>Sivas</option><option  value='70'>Tekirdağ</option><option  value='71'>Tokat</option><option  value='72'>Trabzon</option><option  value='73'>Tunceli</option><option  value='74'>Şanlıurfa</option><option  value='75'>Uşak</option><option  value='76'>Van</option><option  value='77'>Yozgat</option><option  value='78'>Zonguldak</option><option  value='80'>Karaman</option><option  value='81'>Kırıkkale</option><option  value='83'>Şırnak</option><option  value='84'>Bartın</option><option  value='86'>Iğdır</option><option  value='87'>Yalova</option><option  value='88'>Karabük</option><option  value='89'>Kilis</option><option  value='90'>Osmaniye</option><option  value='91'>Düzce</option><option  value='92'>Batman</option></optgroup></select>        <br />
+	ADRES:<br />
+		<input id="place" name="place" type="text" value="" size="69" maxlength="120" /><br />
+	    <br />
+	ADINIZ*:<br />
+	<input id="name" name="name" type="text" value="" maxlength="75" onblur="validateText(this);"  lang="false"  /><br />
+    EMAİL(yayınlanmayacak)*:<br />    <input id="email" name="email" type="text" value="" maxlength="120" onblur="validateEmail(this);" lang="false"  /><br />
+    	TELEFON (yayınlanacak):<br />
+	<input id="phone" name="phone" type="text" value="" maxlength="11" /><br />
+		<input type='hidden' name='MAX_FILE_SIZE' value='1000000' /><br />İlan İle İlgili Fotoğraflar Ekleyin.<br />			<label>Resim 1:</label><input type="file" name="pic1" id="pic1" value="" /><br />
+				<label>Resim 2:</label><input type="file" name="pic2" id="pic2" value="" /><br />
+				<label>Resim 3:</label><input type="file" name="pic3" id="pic3" value="" /><br />
+				<label>Resim 4:</label><input type="file" name="pic4" id="pic4" value="" /><br />
+		<br /></font>
+<button><font face="arial" size="2" color="red">İLAN VER</font></button></center>
+
+    
+    
+    
+
+    
+   
+  
+   <br><center>
+    <hr width=40%>
+    <small>Tüm Hakları Saklıdır © 2018 | Kevser ÇİL</small>
+     
+    <hr width=30%>
+ 
+  <!-- Bu kodlar Kevser ÇİL tarafından Yazılmıştır. -->
+  </body>
+</html>
